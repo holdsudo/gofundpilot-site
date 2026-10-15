@@ -304,6 +304,9 @@ em{font-style:italic}
 .suite{display:flex;gap:8px}
 .suite span{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-family:var(--serif);font-size:22px;border:1px solid var(--line-2);color:var(--ivory-2);background:rgba(244,238,227,.03)}
 .suite span:nth-child(odd){color:var(--gold-hi);border-color:var(--gline)}
+.suite span svg{width:23px;height:23px;display:block;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.suite span{transition:color .4s,border-color .4s,background .4s}
+.b--suite:hover .suite span{border-color:var(--gline);color:var(--gold-hi)}
 
 /* ============ cabin ============ */
 .cabin{position:relative;padding:clamp(110px,14vw,190px) 0;background:radial-gradient(60% 60% at 25% 50%,rgba(201,163,101,.07),transparent 70%)}
